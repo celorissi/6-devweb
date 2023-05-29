@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <hr>
+</head>
+<body>
+<h2>Integração do HTML do Flask</h2>
+<hr>
+
+<ol>
+    {% for chave, valor in notas.items() %}
+        <li>{{chave}}</li>
+        <li>{{valor}}</li>
+    {% endfor %}
+</ol>
+<hr>
+<ol>
+    {% for chave, valor in notas.items() %}
+        <details>
+            <summary>{{chave}}</summary>
+            <p>{{valor}}</p>
+        </details>
+    {% endfor %}
+</ol>
+
+
+<hr>
+
+</body>
+</html>
